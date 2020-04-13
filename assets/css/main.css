@@ -2898,9 +2898,37 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
-	#header nav {
+	#header jb {
 		position: absolute;
 		left: 0.5em;
+		top: 0;
+		height: 3em;
+		line-height: 3em;
+	}
+
+		#header jb ul {
+			margin: 0;
+		}
+
+			#header jb ul li {
+				display: inline-block;
+				margin-left: 0.5em;
+				font-size: 0.9em;
+			}
+
+				#header jb ul li a {
+					display: block;
+					color: inherit;
+					text-decoration: none;
+					height: 3em;
+					line-height: 3em;
+					padding: 0 0.5em 0 0.5em;
+					outline: 0;
+				}
+
+	#header nav {
+		position: absolute;
+		right: 0.5em;
 		top: 0;
 		height: 3em;
 		line-height: 3em;
@@ -2949,6 +2977,19 @@ input, select, textarea {
 			#header nav {
 				display: none;
 			}
+
+			#header jb {
+				text-align: center;
+				position: relative;
+				left: 0;
+				top: 0;
+				height: 2.5em;
+				line-height: 2.5em;
+			}
+
+				#header jb a {
+					font-size: 1em;
+				}
 
 	}
 
