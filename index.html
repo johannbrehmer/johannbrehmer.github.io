@@ -14,11 +14,27 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
+
+	<!-- Nav -->
+		<header id="header">
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#research">Research</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#code">Code</a></li>
+					<li><a href="#talks">Talks</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#photography">Photography</a></li>
+				</ul>
+			</nav>
+		</header>
+
 	<!-- Wrapper -->
 	<div id="wrapper" class="divided">
 
 		<!-- Intro -->
-		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="intro">
 			<div class="content">
 				<h1>Johann Brehmer</h1>
 				<p class="major">Research at the boundary of machine learning and high-energy physics</p>
@@ -47,7 +63,69 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="publications">
 			<div class="content">
 				<h2>Publications</h2>
-				<p>For my papers, see <a href=https://labs.inspirehep.net/authors/1641015>my INSPIRE profile</a> or <a href=https://scholar.google.com/citations?user=ZdUMvCsAAAAJ>Google Scholar</a>.</p>
+				<p>A few selected publications I am particularly proud of:</p>
+				<ul class="alt2">
+					<li>
+						JB and Kyle Cranmer:<br />
+						<b>Flows for simultaneous manifold learning and density estimation</b>.<br />
+						<a href="https://arxiv.org/abs/2003.13913">[arXiv]</a>
+						<a href="https://ui.adsabs.harvard.edu/abs/2020arXiv200313913B/exportcitation">[bibtex]</a>
+						<a href="https://github.com/johannbrehmer/manifold-flow">[code]</a>
+					</li>
+					<li>
+						Kyle Cranmer, JB, and Gilles Louppe:<br />
+						<b>The frontier of simulation-based inference</b>.<br />
+						Accepted by PNAS.
+						<a href="https://arxiv.org/abs/1911.01429">[arXiv]</a>
+						<a href="https://ui.adsabs.harvard.edu/abs/2019arXiv191101429C/exportcitation">[bibtex]</a>
+					</li>
+					<li>
+						JB, Siddharth Mishra-Sharma, Joeri Hermans, Gilles Louppe, and Kyle Cranmer:<br />
+						<b>Mining for Dark Matter Substructure: Inferring subhalo population properties from strong lenses with machine learning</b>.<br />
+						ApJ 886 (2019) 49.
+						<a href="https://arxiv.org/abs/1909.02005">[arXiv]</a>
+						<a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab4c41">[journal]</a>
+						<a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...886...49B/exportcitation">[bibtex]</a>
+						<a href="https://github.com/smsharma/mining-for-substructure-lens">[code]</a>
+					</li>
+					<li>
+						JB, Felix Kling, Irina Espejo, and Kyle Cranmer:<br />
+						<b>MadMiner: Machine learning-based inference for particle physics</b>.<br />
+						Comput.Softw.Big Sci. 4 (2020).
+						<a href="https://arxiv.org/abs/1907.10621">[arXiv]</a>
+						<a href="https://link.springer.com/article/10.1007/s41781-020-0035-2">[journal]</a>
+						<a href="https://ui.adsabs.harvard.edu/abs/2019arXiv190710621B/exportcitation">[bibtex]</a>
+						<a href="https://github.com/diana-hep/madminer">[code]</a>
+					</li>
+					<li>
+						JB, Gilles Louppe, Juan Pavez, and Kyle Cranmer:<br />
+						<b>Mining gold from implicit models to improve likelihood-free inference</b>.<br />
+						PNAS 117 (2020) 10.
+						<a href="https://arxiv.org/abs/1805.12244">[arXiv]</a>
+						<a href="https://www.pnas.org/content/117/10/5242">[journal]</a>
+						<a href="https://ui.adsabs.harvard.edu/abs/2018arXiv180512244B/exportcitation">[bibtex]</a>
+					</li>
+					<li>
+						JB, Kyle Cranmer, Gilles Louppe, and Juan Pavez:<br />
+						<b>Constraining Effective Field Theories with Machine Learning</b>.<br />
+						PRL 121 (2018) 11.
+						<a href="https://arxiv.org/abs/1805.00013">[arXiv]</a>
+						<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.111801">[journal]</a>
+						<a href="https://ui.adsabs.harvard.edu/abs/2018PhRvL.121k1801B/exportcitation">[bibtex]</a>
+						<a href="https://github.com/johannbrehmer/higgs_inference">[code]</a>
+					</li>
+				</ul>
+				<p>For a full list, see <a href=https://labs.inspirehep.net/authors/1641015>my INSPIRE profile</a> or <a href=https://scholar.google.com/citations?user=ZdUMvCsAAAAJ>Google Scholar</a>.</p>
+				</div>
+			<div class="image">
+				<img src="images/prl.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Code -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="code">
+			<div class="content">
+				<h2>Code</h2>
 				<p>Most of my scientific code is on <a href=https://github.com/johannbrehmer>my GitHub repo</a>. The repository also contains <a href=https://github.com/johannbrehmer/slides>slides from most of my talks</a>.</p>
 			</div>
 			<div class="image">
@@ -55,8 +133,19 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			</div>
 		</section>
 
+		<!-- Talks -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="talks">
+			<div class="content">
+				<h2>Talks</h2>
+				<p>My Github repository also contains <a href=https://github.com/johannbrehmer/slides>slides from most of my talks</a>.</p>
+			</div>
+			<div class="image">
+				<img src="images/prl.jpg" alt="" />
+			</div>
+		</section>
+
 		<!-- Contact -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="publications">
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="contact">
 			<div class="content">
 				<h2>Contact</h2>
 				<p>Find me, most of the time, in room 840 in the <a href=https://goo.gl/maps/mA6gN5sJzRt>Department of Physics</a>, or in room 614 at the <a href=https://goo.gl/maps/bJVJtydcLY52>Center for Data Science</a>. Or write me at <a href="mailto:johann.brehmer@nyu.edu">johann.brehmer@nyu.edu</a>.</p>
@@ -67,7 +156,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		</section>
 
 		<!-- Other -->
-		<section class="wrapper style1 align-left">
+		<section class="wrapper style1 align-left" id="photography">
 			<div class="inner">
 				<h2>What else?</h2>
 				<p>I sometimes travel and take pictures:</p>
