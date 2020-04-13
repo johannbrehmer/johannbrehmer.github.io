@@ -2879,7 +2879,7 @@ input, select, textarea {
 	left: 0;
 	top: 0;
 	width: 100%;
-	background: rgba(255, 255, 255, 0.95);
+	background: rgba(255, 255, 255, 0.85);
 	height: 3em;
 	line-height: 3em;
 	box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2900,7 +2900,7 @@ input, select, textarea {
 
 	#header nav {
 		position: absolute;
-		right: 0.5em;
+		left: 0.5em;
 		top: 0;
 		height: 3em;
 		line-height: 3em;
@@ -2926,7 +2926,7 @@ input, select, textarea {
 					outline: 0;
 				}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 600px) {
 
 		#header {
 			height: 2.5em;
@@ -2956,7 +2956,7 @@ body {
 	padding-top: 3em;
 }
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 600px) {
 
 		body {
 			padding-top: 2.5em;
