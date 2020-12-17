@@ -41,8 +41,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="intro">
 			<div class="content">
 				<h1>Johann Brehmer</h1>
-				<p class="major">Researcher at the intersection of machine learning and physics</p>
-				<p>As a Moore-Sloan postdoc at the Center for Data Science at NYU and a part of Kyle Cranmer's group, I'm developing new ways to extract more knowledge from data with deep learning, statistics, and large-scale computer simulations. In January I will begin working at Qualcomm's AI Research group in Amsterdam.</p>
+				<!-- <p class="major">Machine learning and physics researcher</p> -->
+				<p>I'm a postdoc in <a href="https://twitter.com/kylecranmer">Kyle Cranmer</a>'s group at NYU, where I'm working on the intersection of machine learning and physics. I grew up as a particle phenomenologist and did my PhD with <a href="https://www.thphys.uni-heidelberg.de/~plehn">Tilman Plehn</a> in Heidelberg. In January I will begin working at <a href="https://www.qualcomm.com/invention/artificial-intelligence/ai-research">Qualcomm AI Research</a> in Amsterdam.</p>
 				<a href=data/Johann_Brehmer_CV.pdf>Resume</a>
 			</div>
 			<div class="image">
@@ -53,11 +53,20 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Research -->
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="research">
 			<div class="content">
-				<h2>Research</h2>
+				<h2>Research interests</h2>
+				<ul class="">
+					<li>Simulation-based (likelihood-free) inference: machine learning in the context of (scientific) simulator models</li>
+					<li>Probabilistic models, in particular normalizing flows</li>
+					<li>The embedding of domain knowledge, structure, and symmetries into ML models and algorithms</li>
+					<li>(Bayesian) statistics</li>
+					<li>Machine learning for problems in particle physics and astrophysics</li>
+				</ul>
+				<!--
 				<p>I am interested in methods that let us infer knowledge from data. A focus of my research is <b>simulation-based</b> (or likelihood-free) <b>inference</b>: statistical methods for the case when we can model a phenomenon with a computer simulation, but we cannot calculate its likelihood function. This may sound like an obscure special case, but is actually extremely common in science, with examples from neuroscience to epidemiology and from elementary particle physics to cosmology! New algorithms based on machine learning, active learning, and the tight integration of simulation and inference are changing what we can do in this field very rapidly, <a href=https://arxiv.org/abs/1911.01429>read our opinionated review</a>. We also introduced <a href=https://arxiv.org/abs/1805.12244>new inference methods</a> that combine some understanding of the latent processes in the simulator, a dash of classical statistics, and a heavy dose of machine learning.</p>
 				<p>Applied to problems in <b>particle physics</b>, <a href=https://arxiv.org/abs/1805.00013>these methods allow us to measure fundamental physics properties more precisely than before</a>. I am the lead developer of <a href=https://github.com/diana-hep/madminer>the MadMiner library</a>, which automates these algorithms and makes it straightforward to apply these algorithms to almost any measurement problem at the LHC experiments. I also worked on <a href=https://arxiv.org/abs/1612.05261>forecasting methods based on <b>information geometry</b></a> for particle physics.</p>
 				<p>But these methods are not limited to particle physics. We used the same techniques <a href=https://arxiv.org/abs/1909.02005>to learn about <b>dark matter</b> through gravitational lensing</a>. I am excited to find out how they can help us understand what is happening in problems in many other scientific domains.</p>
 				<p>Beyond scientific use cases, I am generally interested in <b>probabilistic and generative models</b> such as normalizing flows, <b>(approximate) inference</b>, and the <b>quantification of uncertainty</b>. I have led the development of <a href="https://arxiv.org/abs/2003.13913">manifold-learning flows</a>, a new class of generative models that simultaneously learn the data manifold as well as a tractable probability density on that manifold.</p>
+		  	-->
 			</div>
 			<div class="image">
 				<img src="images/rascal_explainer.jpg" alt="" />
@@ -71,7 +80,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				<p>For a more or less complete list, see <a href=https://scholar.google.com/citations?user=ZdUMvCsAAAAJ>Google Scholar</a>, <a href=https://labs.inspirehep.net/authors/1641015>NASA/ADS</a>, or <a href=https://labs.inspirehep.net/authors/1641015>INSPIRE</a>. Here I want to highlight a few favorites:</p>
 
 				<h3>Probabilistic / generative models</h3>
-				<ul class="alt2">
+				<ul class="">
 					<li>
 						<b>Johann Brehmer</b> and Kyle Cranmer:<br />
 						<b>Flows for simultaneous manifold learning and density estimation</b>.<br />
@@ -85,14 +94,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					</li>
 					<!-- <li>
 						<b>Johann Brehmer</b> and Kyle Cranmer:<br />
-						<b>NOTAGAN: Flows for the data manifold</b>.<br /> 
+						<b>NOTAGAN: Flows for the data manifold</b>.<br />
 						Spotlight talk, ICML workshop on Invertible Neural Networks, Normalizing Flows, and Explicit Likelihood Models (2020).
 						<a href="https://invertibleworkshop.github.io/accepted_papers/pdfs/12.pdf">[workshop]</a>
 					</li> -->
 				</ul>
 
 				<h3>Simulation-based inference methods</h3>
-				<ul class="alt2">
+				<ul class="">
 					<li>
 						<b>Johann Brehmer</b>, Gilles Louppe, Juan Pavez, and Kyle Cranmer:<br />
 						<b>Mining gold from implicit models to improve likelihood-free inference</b>.<br />
@@ -128,7 +137,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				</ul>
 
 				<h3>Simulation-based inference in physics</h3>
-				<ul class="alt2">
+				<ul class="">
 					<li>
 						<b>Johann Brehmer</b>, Siddharth Mishra-Sharma, Joeri Hermans, Gilles Louppe, and Kyle Cranmer:<br />
 						<b>Mining for Dark Matter Substructure: Inferring subhalo population properties from strong lenses with machine learning</b>.<br />
@@ -168,7 +177,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				</ul>
 
 				<h3>More deep learning for physics</h3>
-				<ul class="alt2">
+				<ul class="">
 					<li>
 						<b>Johann Brehmer</b>, Sebastian Macaluso, Duccio Pappadopulo, and Kyle Cranmer:<br />
 						<b>Hierarchical clustering in particle physics through reinforcement learning</b>.<br />
@@ -186,7 +195,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				</ul>
 
 				<h3>Information geometry, experimental design, and particle physics walk into a bar</h3>
-				<ul class="alt2">
+				<ul class="">
 					<li>
 						<b>Johann Brehmer</b>, Kyle Cranmer, Felix Kling, Tilman Plehn:<br />
 						<b>Better Higgs Measurements Through Information Geometry</b>.<br />
@@ -198,7 +207,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				</ul>
 
 				<h3>Particle physics theory</h3>
-				<ul class="alt2">
+				<ul class="">
 					<li>
 						<b>Johann Brehmer</b>, Ayres Freitas, David Lopez-Val, Tilman Plehn:<br />
 						<b>Pushing Higgs Effective Theory to its Limits</b>.<br />
@@ -241,7 +250,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="contact">
 			<div class="content">
 				<h2>Contact</h2>
-				<p>Write me at <a href="mailto:johann.brehmer@nyu.edu">johann.brehmer@nyu.edu</a>. In non-pandemic times, you can usually find me either in room 614 at the <a href=https://goo.gl/maps/bJVJtydcLY52>Center for Data Science</a> or in room 840 in the <a href=https://goo.gl/maps/mA6gN5sJzRt>Department of Physics</a>.</p>
+				<p>Write me at <a href="mailto:mail@johannbrehmer.de">mail@johannbrehmer.de</a>.</p>
 			</div>
 			<div class="image">
 				<img src="images/monkey.jpg" alt="" />
