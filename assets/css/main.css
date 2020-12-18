@@ -5094,7 +5094,8 @@ body {
 			-webkit-flex-direction: column-reverse;
 			-ms-flex-direction: column-reverse;
 			flex-direction: column-reverse;
-			text-align: center !important;
+			/* text-align: center !important;  original */
+			text-align: left;  /* Johann: let's see if this works */
 		}
 
 			.spotlight.style1 .content {
