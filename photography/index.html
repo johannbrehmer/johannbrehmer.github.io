@@ -34,10 +34,10 @@
     <div class="container-fluid">
 
       <!-- Gallery -->
-      <div class="grid row">
+      <!-- <div class="grid row"> -->
 
         <!-- Picture cell -->
-        <div class="col-md-6 col-xl-4 grid-item"> 
+        <!-- <div class="col-md-6 col-xl-4 grid-item"> 
           <div class="box-masonry">
             <a href="img/portfolio/gallery41.jpg" title="" class="box-masonry-image with-hover-overlay" data-fslightbox="g1">
               <img src="img/portfolio/gallery41.jpg" alt="" class="img-fluid">
@@ -49,12 +49,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Picture cell end -->
 
       <!-- Highlight picture cell -->
       <!-- </div> -->
-      <!-- <div class="row">
+      <div class="row">
         <div class="col-md-12 col-xl-12"> 
           <div class="box-masonry">
             <a href="img/portfolio/gallery41.jpg" title="" class="box-masonry-image with-hover-overlay" data-fslightbox="g1">
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="grid row"> -->
+      <div class="grid row">
       <!-- Highlight picture cell end -->
 
         <!-- Picture cell -->
@@ -573,7 +573,7 @@
         <!-- Picture cell end -->
 
         <!-- Picture cell -->
-        <div class="col-md-6 col-xl-4 grid-item"> 
+        <!-- <div class="col-md-6 col-xl-4 grid-item"> 
           <div class="box-masonry">
             <a href="img/portfolio/gallery09.jpg" title="" class="box-masonry-image with-hover-overlay" data-fslightbox="g1">
               <img src="img/portfolio/gallery09.jpg" alt="" class="img-fluid">
@@ -585,11 +585,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Picture cell end -->
 
       <!-- Highlight picture cell -->
-      <!-- </div>
+      </div>
       <div class="row">
         <div class="col-md-12 col-xl-12"> 
           <div class="box-masonry">
@@ -605,7 +605,7 @@
           </div>
         </div>
       </div>
-      <div class="grid row"> -->
+      <div class="grid row">
       <!-- Highlight picture cell end -->
 
         <!-- Picture cell -->
@@ -717,6 +717,7 @@
 
   <!-- JavaScript files-->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/images-loaded/imagesloaded.pkgd.min.js"></script>
   <script src="vendor/popper.js/umd/popper.min.js"> </script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
@@ -726,5 +727,23 @@
 
   <!-- Lightbox -->
   <script src="js/fslightbox.js"></script>
+
+  <!-- Let's trigger masonry to recompute the layout -->
+  <!-- <script>
+    // $(window).on('resize', function () {
+    //     $('#element').masonry('reloadItems');
+    // }); 
+    // setTimeout(function(){
+    //   $(window).trigger("resize");
+    // }, 4000);
+  </script> -->
+
+  <!-- Trigger masonry layouting after all images are loaded -->
+  <script>
+    var $gggrid = $('.grid').masonry({});
+    $gggrid.imagesLoaded().progress( function() {
+      $gggrid.masonry('layout');
+    });
+  </script>
 
 </body>
