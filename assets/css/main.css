@@ -2908,11 +2908,12 @@ input, select, textarea {
 
 		#header nav ul {
 			margin: 0;
+			margin-top: -0.2em;
 		}
 
 			#header nav ul li {
 				display: inline-block;
-				margin-left: 0.3em;
+				margin-left: 0;
 				font-size: 0.9em;
 			}
 
